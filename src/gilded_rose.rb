@@ -18,12 +18,12 @@ class GildedRose
           if item.name == "Backstage passes to a TAFKAL80ETC concert"
             if item.sell_in < 11
               if item.quality < 50
-                item.quality = item.quality + 1
+                item.quality = item.quality + 2 # Increment quality passed 10 days of sell_in
               end
             end
             if item.sell_in < 6
               if item.quality < 50
-                item.quality = item.quality + 1
+                item.quality = item.quality + 3 # Increment quality if missing less than 5 days
               end
             end
           end
